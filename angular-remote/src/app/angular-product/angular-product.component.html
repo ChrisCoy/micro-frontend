@@ -1,0 +1,32 @@
+<div class="product">
+  <img
+    src="https://steamuserimages-a.akamaihd.net/ugc/850479378285409217/A94EF98D6432C2357D0EF91867AE36B25792EE12/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
+    class="product__image"
+    alt=""
+    srcset=""
+  />
+
+  <div class="product__info">
+    <h1 class="product__title">Angular Remote</h1>
+    <p class="product__description">
+      Peguino Bebum, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quisquam voluptates, quod, quae, quos quia quibusdam quidem voluptatum
+      exercitationem doloribus nemo doloremque.
+    </p>
+    <p class="product__price">$19.99</p>
+    <div class="product__cart">
+      <span>{{ cart.length }} penguinos adicionados no carrinho</span>
+      <div class="product__buttons">
+        <button
+          (click)="addToCart()"
+          class="btn product__add-button"
+        >
+          Adicionar ao carrinho
+        </button>
+        <button (click)="clearCart()" class="btn product__clear-button">
+          Limpar carrinho
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
